@@ -47,7 +47,7 @@ def process_employees():
     def get_data():
         # NOTE: configure this as appropriate for your airflow environment
         # data_path = "/opt/airflow/dags/apache_airflow_dags/files/employees.csv"
-        data_path = "~/Desktop/Projects/AirflowPractice/dags/apache_airflow_dags/files/employees.csv"
+        data_path = "/dags/apache_airflow_dags/files/employees.csv"
         os.makedirs(os.path.dirname(data_path), exist_ok=True)
 
         url = "https://raw.githubusercontent.com/apache/airflow/main/docs/apache-airflow/tutorial/pipeline_example.csv"
